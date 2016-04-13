@@ -19,7 +19,7 @@
 #ifdef __APPLE__
 
 #else
-#include <omp.h>
+// #include <omp.h>
 #endif
 
 using std::max;
