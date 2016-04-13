@@ -16,7 +16,12 @@
 
 #include <iostream>
 #include <fstream>
+#ifdef __APPLE__
+#include <libiomp/omp.h>
+
+#else
 #include <omp.h>
+#endif
 
 using std::max;
 
