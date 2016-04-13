@@ -269,8 +269,8 @@ endif
 # OS X:
 # clang++ instead of g++
 # libstdc++ for NVCC compatibility on OS X >= 10.9 with CUDA < 7.0
-CXXFLAGS += -fopenmp
-LINKFLAGS += -fopenmp
+# CXXFLAGS += -fopenmp
+# LINKFLAGS += -fopenmp
 ifeq ($(OSX), 1)
 	CXX := /usr/bin/clang++
 	ifneq ($(CPU_ONLY), 1)
